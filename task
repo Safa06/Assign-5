@@ -1,0 +1,17 @@
+// while click on the copy btns , main copy button innerText will be increased
+
+// let copyBtns = document.getElementsByClassName('copy-btn');
+// let serviceNumbers = document.getElementsByClassName('service-num')
+// for (let j = 0; j < copyBtns.length; j++) {
+//     copyBtns[j].addEventListener('click', function () {
+//         console.log(serviceNumbers[j]);
+//         let serviceNum = serviceNumbers[j].innerText;
+//         alert('Copying the card!' + '' + serviceNum);
+
+//         const mainCopyNumber = Number(document.getElementById('main-copy-number').innerText);
+//         const newCopyNumber = mainCopyNumber + 1;
+//         document.getElementById('main-copy-number').innerText = newCopyNumber;
+//         console.log('hello');
+//     })
+
+// }

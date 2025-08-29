@@ -11,6 +11,7 @@ for (let whiteHeart of whiteHearts) {
 }
 
 
+
 // 1. take all call buttons, when it is clicked, service name and number will be alerted
 // 2. Along with the coins number will be decreased and show alert when it is 0 zero for calling
 
@@ -76,31 +77,25 @@ for (let i = 0; i < callBtns.length; i++) {
 }
 
 
-
-// while click on the copy btns , main copy button innerText will be increased
-
-let copyBtn = document.getElementsByClassName('copy-btn');
-// for (let j = 0; j < copyBtn.length; j++) {
-//     copyBtn[j].addEventListener('click', function () {
-//         const mainCopyNumber = Number(document.getElementById('main-copy-number').innerText);
-//         const newCopyNumber = mainCopyNumber + 1;
-//         console.log(newCopyNumber);
-
-//         console.log(mainCopyNumber);
-
-//     });
+// while click on the copy btns , main copy button innerText will be increased and innerText will be copied to the clipboard
 
 let copyBtns = document.getElementsByClassName('copy-btn');
-for (let copyBtn of copyBtns) {
-    copyBtn.addEventListener('click', function () {
-        alert('Copying the card!');
+for (let j = 0; j < copyBtns.length; j++) {
+    copyBtns[j].addEventListener('click', function () {
+        //console.log(serviceNumbers[j]);
+        let serviceNum = serviceNumbers[j].innerText;
+        alert('Copying the card!' + ' ' + serviceNum);
+
         const mainCopyNumber = Number(document.getElementById('main-copy-number').innerText);
 
+        //copy to the clipboard
+        navigator.clipboard.writeText(serviceNum).then(() => {
+            
+        })
         const newCopyNumber = mainCopyNumber + 1;
         document.getElementById('main-copy-number').innerText = newCopyNumber;
-        console.log('hello');
     })
 
-
 }
+
 
