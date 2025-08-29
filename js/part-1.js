@@ -84,7 +84,7 @@ for (let j = 0; j < copyBtns.length; j++) {
     copyBtns[j].addEventListener('click', function () {
         //console.log(serviceNumbers[j]);
         let serviceNum = serviceNumbers[j].innerText;
-        alert('Copying the card!' + ' ' + serviceNum);
+        alert('Number is copied :' + ' ' + serviceNum);
 
         const mainCopyNumber = Number(document.getElementById('main-copy-number').innerText);
 
