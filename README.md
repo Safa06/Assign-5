@@ -4,7 +4,7 @@
 *****************************************************************************************************************
 
 
-*********************** Answer: 1 ******************
+***************************************** Answer: 1 ************************************
 getElementById: 
     - It takes values depending on the unique id only. 
     - It can select only one item at a time as id is unique for every element.
@@ -31,7 +31,7 @@ querySelectorAll:
 2. How do you create and insert a new element into the DOM?
 *****************************************************************************************************************
 
-*********************** Answer: 2 ******************
+***************************************** Answer: 2 ************************************
 
 To create a new element "createElement" and to insert the element into DOM "appendChild" is used.
 Example: I have a div with an id named "container". To create an element suppose another div into it the process is -
@@ -51,7 +51,7 @@ Example: I have a div with an id named "container". To create an element suppose
 3. What is Event Bubbling and how does it work?
 *****************************************************************************************************************
 
-*********************** Answer: 3 ******************
+***************************************** Answer: 3 ************************************
 
 When an events is created for a child element, it bubbles up to the parents, then parent's parent element and so on and lastly reaches to the document.
 Example: 
@@ -63,7 +63,7 @@ I have a div and button in it in the body. If I click on the button, an event wi
 4. What is Event Delegation in JavaScript? Why is it useful?
 *****************************************************************************************************************
 
-*********************** Answer: 4 ******************
+***************************************** Answer: 4 ************************************
 Event Delegation is used -
     - where event listener is created for the parent element and can manage the events for its all children which are triggered. 
     - It is useful as event is not needed to create for separate children. One event is attached for the parent and it can manage all the children triggered events.
@@ -76,7 +76,7 @@ Event Delegation is used -
 5. What is the difference between preventDefault() and stopPropagation() methods?
 *****************************************************************************************************************
 
-*********************** Answer: 5 ******************
+***************************************** Answer: 5 ************************************
 preventDefault() :
     - It stops browser default actions based on the event.
     - If I submit a form or click on any link, it won't do the default behavior like form submission, link navigation.
