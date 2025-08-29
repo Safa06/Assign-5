@@ -11,3 +11,20 @@ for (let whiteHeart of whiteHearts) {
 }
 
 
+//take all call buttons, when it is clicked, service name and number will be alerted
+
+let copyBtns = document.getElementsByClassName('copy-btn');
+let serviceNames = document.getElementsByClassName('service-name');
+let serviceNumbers = document.getElementsByClassName('service-num');
+//console.log(serviceNames);
+//console.log(copyBtns.length)
+for (let i = 0; i < copyBtns.length; i++) {
+    copyBtns[i].addEventListener('click', function () {
+        //console.log(copyBtns[i]);
+        let serviceName = serviceNames[i].innerText;
+        let serviceNum = serviceNumbers[i].innerText;
+        alert('📞 Calling' + ' ' + serviceName + ' ' + serviceNum + '...');
+        console.log(serviceName, serviceNum);
+    })
+
+}
