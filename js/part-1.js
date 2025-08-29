@@ -14,26 +14,56 @@ for (let whiteHeart of whiteHearts) {
 // 1. take all call buttons, when it is clicked, service name and number will be alerted
 // 2. Along with the coins number will be decreased and show alert when it is 0 zero for calling
 
-let copyBtns = document.getElementsByClassName('copy-btn');
+let callBtns = document.getElementsByClassName('call-btn');
 let serviceNames = document.getElementsByClassName('service-name');
 let serviceNumbers = document.getElementsByClassName('service-num');
 
-for (let i = 0; i < copyBtns.length; i++) {
-    copyBtns[i].addEventListener('click', function () {
-        //console.log(copyBtns[i]);
-        // let serviceName = serviceNames[i].innerText;
-        // let serviceNum = serviceNumbers[i].innerText;
-        // alert('📞 Calling' + ' ' + serviceName + ' ' + serviceNum + '...');
-        //console.log(serviceName, serviceNum);
-
+for (let i = 0; i < callBtns.length; i++) {
+    callBtns[i].addEventListener('click', function () {
         const coinNumber = Number(document.getElementById('coin-number').innerText);
 
         if (coinNumber > 0) {
-            const newCoinNumber = coinNumber - 20;
-            document.getElementById('coin-number').innerText = newCoinNumber;
+
             let serviceName = serviceNames[i].innerText;
             let serviceNum = serviceNumbers[i].innerText;
             alert('📞 Calling' + ' ' + serviceName + ' ' + serviceNum + '...');
+
+            const newCoinNumber = coinNumber - 20;
+            document.getElementById('coin-number').innerText = newCoinNumber;
+
+            //take title and number for call history
+            const title = callBtns[i].parentNode.parentElement.parentElement.children[0].innerText;
+            const number = callBtns[i].parentNode.parentElement.parentElement.children[2].innerText;
+
+            // console.log(title);
+            // console.log(number);
+
+            let time = new Date();
+            let currentTime = time.toLocaleTimeString();
+            console.log(currentTime);
+
+            // add topics to call history
+            const asideContainer = document.getElementById('aside-container');
+            const newDiv = document.createElement('div');
+            newDiv.innerHTML = `
+            <div class="flex justify-between items-center gap-4 mt-8">
+                    <div class="">
+                        <p class="font-bold text-lg">${title}</p>
+                        <p class="text-gray-500 text-md">${number}</p>
+                    </div>
+                    <div>
+                        <p>${currentTime}</p>
+                    </div>
+
+                </div>
+                `;
+            asideContainer.appendChild(newDiv);
+
+            const clearBtn = document.getElementById('clear-btn');
+            clearBtn.addEventListener('click', function () {
+                newDiv.innerHTML = '';
+            })
+
         }
 
 
@@ -44,3 +74,33 @@ for (let i = 0; i < copyBtns.length; i++) {
     })
 
 }
+
+
+
+// while click on the copy btns , main copy button innerText will be increased
+
+let copyBtn = document.getElementsByClassName('copy-btn');
+// for (let j = 0; j < copyBtn.length; j++) {
+//     copyBtn[j].addEventListener('click', function () {
+//         const mainCopyNumber = Number(document.getElementById('main-copy-number').innerText);
+//         const newCopyNumber = mainCopyNumber + 1;
+//         console.log(newCopyNumber);
+
+//         console.log(mainCopyNumber);
+
+//     });
+
+let copyBtns = document.getElementsByClassName('copy-btn');
+for (let copyBtn of copyBtns) {
+    copyBtn.addEventListener('click', function () {
+        alert('Copying the card!');
+        const mainCopyNumber = Number(document.getElementById('main-copy-number').innerText);
+
+        const newCopyNumber = mainCopyNumber + 1;
+        document.getElementById('main-copy-number').innerText = newCopyNumber;
+        console.log('hello');
+    })
+
+
+}
+
