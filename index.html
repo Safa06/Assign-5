@@ -25,7 +25,7 @@
         </div>
         <div class="flex justify-between items-center gap-5">
             <div class="flex justify-center items-center gap-2">
-                <p class="font-bold">0</p>
+                <p class="font-bold" id="red-heart-number">0</p>
                 <img src="assets/heart.png" alt="" class="w-[30px] h-[30px] ">
             </div>
             <div class="flex justify-center items-center gap-2">
@@ -42,22 +42,24 @@
         class="flex flex-col justify-center items-center p-2 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
         <img src="assets/logo.png" class="w-[70px] h-[70px]" alt="">
         <h1 class="font-bold text-white text-xl my-2">Emergency Service Directory</h1>
-        <p class="font-semibold text-white lg:text-md sm:text-sm sm:text-center md:text-sm">Government Emergency
+        <p class="font-semibold text-white lg:text-md sm:text-sm sm:text-center md:text-sm mb-10">Government Emergency
             Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
     </section>
 
 
     <!-- 3. main section -->
-    <section class="main-section grid grid-cols-12 gap-10 mt-20 mx-auto max-w-7xl mb-20">
-        <div class="col-span-9 bg-[#F2FCF3]">
-            <div class="grid grid-cols-3 gap-8 mt-5">
+    <section
+        class="main-section grid lg:grid-cols-12 sm:grid-cols-12 sm:gap-14 sm:mx-4 lg:gap-10 mt-20 lg:mx-auto lg:max-w-7xl mb-20 sm:max-w-lg">
+        <div class="lg:col-span-9 sm:col-span-7 bg-[#F2FCF3] sm:border-1 border-red-700">
+            <div class="grid lg:grid-cols-3 sm:grid-cols-1 lg:gap-8 mt-5">
 
                 <!-- card 1 -->
                 <div class="card bg-white mx-3 w-[300px] shadow-md flex flex-col gap-4 rounded-lg">
-                    <div class="flex mx-8 justify-between ">
-                        <img src="assets/emergency.png"
-                            class="bg-red-200 rounded-md p-1 w-[30px] h-[30px]" alt="Shoes" />
-                        <img src="assets/heart-icon.png" class="w-[20px] h-[20px]" alt="">
+                    <div class="flex mx-8 justify-between mt-4 ">
+                        <img src="assets/emergency.png" class="bg-red-200 rounded-md p-1 w-[30px] h-[30px]"
+                            alt="Shoes" />
+                        <img src="assets/heart-icon.png" class="white-heart-number w-[20px] h-[20px]" alt="">
+
 
                     </div>
 
@@ -69,14 +71,12 @@
                         <p class="text-md rounded-full text-gray-600 bg-gray-300 w-[60px] py-1 px-1 text-center">All</p>
                         <div class="flex justify-between mt-5">
                             <div class="card-actions rounded-lg">
-                                <button class="btn bg-white w-[100px]"><img
-                                        src="assets/copy.png" class="mr-[10px]"
+                                <button class="copy-btn btn bg-white w-[100px]"><img src="assets/copy.png" class="mr-[10px]"
                                         alt="">Copy</button>
                             </div>
                             <div class="card-actions rounded-lg justify-center items-center">
-                                <button class="btn w-[100px] bg-green-500 text-white"><img
-                                        src="assets/call.png" class="mr-[10px]"
-                                        alt="">Call</button>
+                                <button class="btn w-[100px] bg-green-500 text-white"><img src="assets/call.png"
+                                        class="mr-[10px]" alt="">Call</button>
                             </div>
                         </div>
 
@@ -85,10 +85,9 @@
 
                 <!-- card 2 -->
                 <div class="card bg-white mx-3 w-[300px] shadow-md flex flex-col gap-4 rounded-lg ">
-                    <div class="flex mx-8 justify-between">
-                        <img src="assets/police.png" alt="Shoes"
-                            class="bg-blue-200 rounded-md w-[30px] h-[30px]" />
-                        <img src="assets/heart-icon.png" class="w-[20px] h-[20px]" alt="">
+                    <div class="flex mx-8 justify-between mt-4">
+                        <img src="assets/police.png" alt="Shoes" class="bg-blue-200 rounded-md w-[30px] h-[30px]" />
+                        <img src="assets/heart-icon.png" class=" white-heart-number w-[20px] h-[20px]" alt="">
 
                     </div>
 
@@ -101,14 +100,12 @@
                         </p>
                         <div class="flex justify-between mt-5">
                             <div class="card-actions rounded-lg">
-                                <button class="btn bg-white w-[100px]"><img
-                                        src="assets/copy.png" class="mr-[10px]"
+                                <button class="btn bg-white w-[100px]"><img src="assets/copy.png" class="mr-[10px]"
                                         alt="">Copy</button>
                             </div>
                             <div class="card-actions rounded-lg justify-center items-center">
-                                <button class="btn bg-green-500 w-[100px] text-white"><img
-                                        src="assets/call.png" class="mr-[10px]"
-                                        alt="">Call</button>
+                                <button class="copy-btn btn bg-green-500 w-[100px] text-white"><img src="assets/call.png"
+                                        class="mr-[10px]" alt="">Call</button>
                             </div>
                         </div>
 
@@ -117,10 +114,10 @@
 
                 <!-- card 3 -->
                 <div class="card bg-white mx-3 w-[300px] shadow-md flex flex-col gap-4 rounded-lg ">
-                    <div class="flex mx-8 justify-between">
+                    <div class="flex mx-8 justify-between mt-4">
                         <img src="assets/ambulance.png" alt="Shoes"
                             class="bg-red-200 rounded-md p-1 w-[30px] h-[30px]" />
-                        <img src="assets/heart-icon.png" class="w-[20px] h-[20px]" alt="">
+                        <img src="assets/heart-icon.png" class=" white-heart-number w-[20px] h-[20px]" alt="">
 
                     </div>
 
@@ -132,14 +129,12 @@
                         <p class="text-md rounded-3xl text-gray-600 bg-gray-300 w-[60px] pt-1 text-center">Fire</p>
                         <div class="flex justify-between mt-5">
                             <div class="card-actions rounded-lg">
-                                <button class="btn bg-white w-[100px]"><img
-                                        src="assets/copy.png" class="mr-[10px]"
+                                <button class="btn bg-white w-[100px]"><img src="assets/copy.png" class="mr-[10px]"
                                         alt="">Copy</button>
                             </div>
                             <div class="card-actions rounded-lg justify-center items-center">
-                                <button class="btn bg-green-500 w-[100px] text-white"><img
-                                        src="assets/call.png" class="mr-[10px]"
-                                        alt="">Call</button>
+                                <button class="copy-btn btn bg-green-500 w-[100px] text-white"><img src="assets/call.png"
+                                        class="mr-[10px]" alt="">Call</button>
                             </div>
                         </div>
 
@@ -148,10 +143,10 @@
 
                 <!-- card 4 -->
                 <div class="card bg-white mx-3 w-[300px] shadow-md flex flex-col gap-4 rounded-lg ">
-                    <div class="flex mx-8 justify-between">
+                    <div class="flex mx-8 justify-between mt-4">
                         <img src="assets/ambulance.png" alt="Shoes"
                             class="bg-red-200 w-[30px] h-[30px] rounded-md p-1" />
-                        <img src="assets/heart-icon.png" class="w-[20px] h-[20px]" alt="">
+                        <img src="assets/heart-icon.png" class=" white-heart-number w-[20px] h-[20px]" alt="">
 
                     </div>
 
@@ -164,14 +159,12 @@
                         </p>
                         <div class="flex justify-between mt-5">
                             <div class="card-actions rounded-lg">
-                                <button class="btn bg-white w-[100px]"><img
-                                        src="assets/copy.png" class="mr-[10px]"
+                                <button class="btn bg-white w-[100px]"><img src="assets/copy.png" class="mr-[10px]"
                                         alt="">Copy</button>
                             </div>
                             <div class="card-actions rounded-lg justify-center items-center">
-                                <button class="btn bg-green-500 w-[100px] text-white"><img
-                                        src="assets/call.png" class="mr-[10px]"
-                                        alt="">Call</button>
+                                <button class="copy-btn btn bg-green-500 w-[100px] text-white"><img src="assets/call.png"
+                                        class="mr-[10px]" alt="">Call</button>
                             </div>
                         </div>
 
@@ -180,10 +173,10 @@
 
                 <!-- card 5 -->
                 <div class="card bg-white mx-3 w-[300px] shadow-md flex flex-col gap-4 rounded-lg ">
-                    <div class="flex mx-8 justify-between">
+                    <div class="flex mx-8 justify-between mt-4">
                         <img src="assets/emergency.png" alt="Shoes"
                             class="bg-red-200 w-[30px] h-[30px] rounded-md p-1" />
-                        <img src="assets/heart-icon.png" class="w-[20px] h-[20px]" alt="">
+                        <img src="assets/heart-icon.png" class=" white-heart-number w-[20px] h-[20px]" alt="">
 
                     </div>
 
@@ -195,14 +188,12 @@
                         <p class="text-md rounded-full text-gray-600 bg-gray-300 w-[60px] text-center pt-1">Help</p>
                         <div class="flex justify-between mt-5">
                             <div class="card-actions rounded-lg">
-                                <button class="btn bg-white w-[100px]"><img
-                                        src="assets/copy.png" class="mr-[10px]"
+                                <button class="btn bg-white w-[100px]"><img src="assets/copy.png" class="mr-[10px]"
                                         alt="">Copy</button>
                             </div>
                             <div class="card-actions rounded-lg justify-center items-center">
-                                <button class="btn bg-green-500 w-[100px] text-white"><img
-                                        src="assets/call.png" class="mr-[10px]"
-                                        alt="">Call</button>
+                                <button class="copy-btn btn bg-green-500 w-[100px] text-white"><img src="assets/call.png"
+                                        class="mr-[10px]" alt="">Call</button>
                             </div>
                         </div>
 
@@ -211,10 +202,10 @@
 
                 <!-- card 6 -->
                 <div class="card bg-white mx-3 w-[300px] shadow-md flex flex-col gap-4 rounded-lg ">
-                    <div class="flex mx-8 justify-between">
+                    <div class="flex mx-8 justify-between mt-4">
                         <img src="assets/emergency.png" alt="Shoes"
                             class="bg-red-200 w-[30px] h-[30px] rounded-md p-1" />
-                        <img src="assets/heart-icon.png" class="w-[20px] h-[20px]" alt="">
+                        <img src="assets/heart-icon.png" class="white-heart-number w-[20px] h-[20px]" alt="">
 
                     </div>
 
@@ -226,14 +217,12 @@
                         <p class="text-md rounded-full text-gray-600 bg-gray-300 w-[60px] pt-1 text-center">Govt.</p>
                         <div class="flex justify-between mt-5">
                             <div class="card-actions rounded-lg">
-                                <button class="btn bg-white w-[100px]"><img
-                                        src="assets/copy.png" class="mr-[10px]"
+                                <button class="btn bg-white w-[100px]"><img src="assets/copy.png" class="mr-[10px]"
                                         alt="">Copy</button>
                             </div>
                             <div class="card-actions rounded-lg justify-center items-center">
-                                <button class="btn bg-green-500 w-[100px] text-white"><img
-                                        src="assets/call.png" class="mr-[5px]"
-                                        alt="">Call</button>
+                                <button class="copy-btn btn bg-green-500 w-[100px] text-white"><img src="assets/call.png"
+                                        class="mr-[5px]" alt="">Call</button>
                             </div>
                         </div>
 
@@ -242,10 +231,10 @@
 
                 <!-- card 7 -->
                 <div class="card bg-white mx-3 w-[300px] shadow-md flex flex-col gap-4 rounded-lg ">
-                    <div class="flex mx-8 justify-between">
+                    <div class="flex mx-8 justify-between mt-4">
                         <img src="assets/emergency.png" alt="Shoes"
                             class="bg-red-200 w-[30px] h-[30px] rounded-md p-1" />
-                        <img src="assets/heart-icon.png" class="w-[20px] h-[20px]" alt="">
+                        <img src="assets/heart-icon.png" class="white-heart-number w-[20px] h-[20px]" alt="">
 
                     </div>
 
@@ -258,14 +247,12 @@
                             Electricity</p>
                         <div class="flex justify-between mt-5">
                             <div class="card-actions rounded-lg">
-                                <button class="btn bg-white w-[100px]"><img
-                                        src="assets/copy.png" class="mr-[10px]"
+                                <button class="btn bg-white w-[100px]"><img src="assets/copy.png" class="mr-[10px]"
                                         alt="">Copy</button>
                             </div>
                             <div class="card-actions rounded-lg justify-center items-center">
-                                <button class="btn bg-green-500 w-[100px] text-white"><img
-                                        src="assets/call.png" class="mr-[5px]"
-                                        alt="">Call</button>
+                                <button class="copy-btn btn bg-green-500 w-[100px] text-white"><img src="assets/call.png"
+                                        class="mr-[5px]" alt="">Call</button>
                             </div>
                         </div>
 
@@ -274,10 +261,10 @@
 
                 <!-- card 8 -->
                 <div class="card bg-white mx-3 w-[300px] shadow-md flex flex-col gap-4 rounded-lg ">
-                    <div class="flex mx-8 justify-between">
+                    <div class="flex mx-8 justify-between mt-4">
                         <img src="assets/emergency.png" alt="Shoes"
                             class="bg-red-200 w-[30px] h-[30px] rounded-md p-1" />
-                        <img src="assets/heart-icon.png" class="w-[20px] h-[20px]" alt="">
+                        <img src="assets/heart-icon.png" class="white-heart-number w-[20px] h-[20px]" alt="">
 
                     </div>
 
@@ -289,14 +276,12 @@
                         <p class="text-md rounded-full text-gray-600 bg-gray-300 w-[60px] pt-1 text-center">NGO</p>
                         <div class="flex justify-between mt-5">
                             <div class="card-actions rounded-lg">
-                                <button class="btn bg-white w-[100px]"><img
-                                        src="assets/copy.png" class="mr-[10px]"
+                                <button class="btn bg-white w-[100px]"><img src="assets/copy.png" class="mr-[10px]"
                                         alt="">Copy</button>
                             </div>
                             <div class="card-actions rounded-lg justify-center items-center">
-                                <button class="btn bg-green-500 w-[100px] text-white"><img
-                                        src="assets/call.png" class="mr-[5px]"
-                                        alt="">Call</button>
+                                <button class="copy-btn btn bg-green-500 w-[100px] text-white"><img src="assets/call.png"
+                                        class="mr-[5px]" alt="">Call</button>
                             </div>
                         </div>
 
@@ -305,10 +290,10 @@
 
                 <!-- card 9 -->
                 <div class="card bg-white mx-3 w-[300px] shadow-md flex flex-col gap-4 rounded-lg ">
-                    <div class="flex mx-8 justify-between">
+                    <div class="flex mx-8 justify-between mt-4">
                         <img src="assets/emergency.png" alt="Shoes"
                             class="bg-red-200 w-[30px] h-[30px] rounded-md p-1" />
-                        <img src="assets/heart-icon.png" class="w-[20px] h-[20px]" alt="">
+                        <img src="assets/heart-icon.png" class="white-heart-number w-[20px] h-[20px]" alt="">
 
                     </div>
 
@@ -320,14 +305,12 @@
                         <p class="text-md rounded-full text-gray-600 bg-gray-300 w-[70px] py-1 text-center">Travel</p>
                         <div class="flex justify-between mt-5">
                             <div class="card-actions rounded-lg">
-                                <button class="btn bg-white w-[100px]"><img
-                                        src="assets/copy.png" class="mr-[10px]"
+                                <button class="btn bg-white w-[100px]"><img src="assets/copy.png" class="mr-[10px]"
                                         alt="">Copy</button>
                             </div>
                             <div class="card-actions rounded-lg justify-center items-center">
-                                <button class="btn bg-green-500 w-[100px] text-white"><img
-                                        src="assets/call.png" class="mr-[5px]"
-                                        alt="">Call</button>
+                                <button class="copy-btn btn bg-green-500 w-[100px] text-white"><img src="assets/call.png"
+                                        class="mr-[5px]" alt="">Call</button>
                             </div>
                         </div>
 
@@ -335,16 +318,16 @@
                 </div>
 
             </div>
-
         </div>
 
-        <aside class="bg-white col-span-3 ">
+        <aside class="bg-white lg:col-span-3 sm:col-span-5 sm:border-1 border-red-700">
             <div class="justify-between flex">
                 <div class="flex gap-2 justify-center items-center">
                     <img src="assets/clock.png" alt="">
                     <p class="font-bold">Call History</p>
                 </div>
-                <button class="rounded-2xl text-white font-bold px-4 text-center text-md py-1 bg-green-500">Clear</button>
+                <button
+                    class="rounded-2xl text-white font-bold px-4 text-center text-md py-1 bg-green-500">Clear</button>
 
             </div>
 
